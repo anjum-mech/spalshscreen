@@ -10,13 +10,14 @@ import java.sql.Types.TIME
 
 class Spalsh :Activity(){
 
-    val TIME_OUT : Long = 4000
+    val TIME_OUT :  Long = 1000000000000000000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.spalsh)
 
         Handler().postDelayed(Runnable {
             kotlin.run{
+
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
